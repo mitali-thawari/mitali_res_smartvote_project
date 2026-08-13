@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 nav {
-    background-color: #173c28;
+    background-color:rgb(9, 48, 18);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -25,23 +24,201 @@ nav a {
 nav a:hover {
     color: #6dceff;
 }
-section{
-    height: 100vh;
-    text-align: center;
-    padding-top: 200px;
+.home-section{
+    width: 100%;
+    min-height: 100vh;
+    text-align:left;
+    padding-top: 120px;
+    background-image: url(assets/vote3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-section h1{
+.home-section h1{
     font-size: 50px;
-    color: rgb(62, 62, 129);
+    color: rgb(150, 30, 50);
 }
-section p{
+.home-section p{
     font-size: 18px;
-    color: rgb(159, 39, 73);
+    color: rgb(127, 159, 39);
     margin: 20px;
+    
 }
-section button {
+.home-section button {
     background-color: rgb(20, 21, 21);
     color: azure;
     padding: 12px;
     border-radius: 5px;
+}
+
+/*Candidates*/
+.candidates-section{
+    height: 100vh;
+    text-align: center;
+    padding-top: 50px;
+}
+.candidates-section h2{
+    margin-bottom: 20px;
+}
+.candidates{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+.card{
+    width: 250px;
+    margin: 15px;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px lightgray;
+}
+.card h3{
+    color:rgb(77, 56, 122)
+}
+.card p{
+    color:darkgrey;
+}
+.card button{
+    background-color:rgb(108, 93, 135);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card:hover{
+    transform:translateY(-10px)
+}
+/*Election*/
+.election-section{
+    min-height: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.election-section h2{
+    margin-bottom: 40px;
+}
+.election-info{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    flex-wrap: wrap;
+}
+.info-card{
+    width: 220px;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15x lightgray;
+    transition: 0.3s;
+}
+.info-card:hover{
+    color: rgb(74, 29, 29);
+    transform:translate(-8px);
+}
+.info-card h3{
+    color: rgb(89, 65, 163);
+    margin-bottom: 18px;
+}
+.info-card{
+    color:darkgrey;
+    font-size: 18px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+<!--voting-->
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f8ff;
+    color: #222;
+}
+
+/* Voting Section */
+.voting-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.voting-section h1 {
+    color: #311278;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.voting-section p {
+    color: #666;
+}
+
+/* Voting Box */
+.voting-box {
+    background: white;
+    width: 450px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.voting-box h2 {
+    color: #123c78;
+    margin-bottom: 25px;
+}
+
+/* Candidate */
+.candidate {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.candidate:hover {
+    background: #eef4ff;
+    border-color: #933232;
+}
+
+.candidate input {
+    margin-right: 15px;
+}
+
+.candidate-name {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.party {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Vote Button */
+.vote-btn {
+    background: #310303;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.vote-btn:hover {
+    background: #24a6ce;
 }
