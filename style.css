@@ -13,184 +13,292 @@ body {
 nav {
     width: 100%;
     background-color: #000;
-    padding: 20px;
+
+    padding: 10px 30px;
+
     display: flex;
     align-items: center;
+
     gap: 25px;
 }
 
-nav h2 {
-    color: white;
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
     margin-right: auto;
 }
 
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+}
+
+
+.logo span {
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+
 nav a {
     color: white;
+
     text-decoration: none;
+
+    font-size: 16px;
+
     white-space: nowrap;
 }
 
+
 nav a:hover {
-    color: #6dff79;
+    color: #ddd;
 }
+
 
 .home-section {
     width: 100%;
+
     min-height: 100vh;
+
     text-align: left;
+
     padding-top: 120px;
 
     background-image: url("assets/vote3.jpeg");
+
     background-repeat: no-repeat;
+
     background-size: cover;
+
     background-position: center;
 }
 
+
 .home-section h1 {
     font-size: 50px;
+
     color: rgb(150, 30, 50);
 }
 
+
 .home-section p {
     font-size: 18px;
+
     color: black;
+
     margin: 20px;
 }
+
 
 .home-section button {
     background-color: rgb(20, 21, 21);
+
     color: rgb(31, 98, 98);
+
     padding: 12px 20px;
+
     border-radius: 5px;
+
     border: none;
+
     margin: 20px;
 }
-
 .banner {
     width: 100%;
+
     height: 800px;
+
     overflow: hidden;
 }
+
 
 .banner .carousel,
 .banner .carousel-inner,
 .banner .carousel-item {
     width: 100%;
+
     height: 100%;
 }
 
+
 .banner .carousel-item img {
     width: 100%;
+
     height: 100%;
+
+    object-fit: cover;
 }
 
 .banner-box {
     position: absolute;
+
     top: 50%;
+
     left: 50%;
+
     transform: translate(-50%, -50%);
 
     background: rgba(0, 0, 0, 0.7);
+
     padding: 15px 25px;
+
     border-radius: 10px;
 
     text-align: center;
 }
 
+
 .banner-box h1 {
     color: white;
+
     font-size: 40px;
+
     font-weight: bold;
+
     margin-bottom: 15px;
 }
 
+
 .banner-box p {
     color: rgb(247, 244, 244);
+
     font-size: 18px;
+
     margin-bottom: 20px;
 }
 
 .why-choose-us {
     background-color: #9a7a7a;
+
     padding: 70px 20px;
+
     text-align: center;
 }
 
+
 .why-choose-us h2 {
     color: #070301;
+
     font-size: 32px;
+
     margin-bottom: 15px;
 }
 
+
 .why-intro {
     color: #1a1616;
+
     font-size: 17px;
+
     margin-bottom: 40px;
 }
 
+
 .why-cards {
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 20px;
 }
 
+
 .why-card {
     background-color: rgb(205, 197, 197);
+
     width: 30%;
+
     padding: 30px 20px;
+
     border-radius: 12px;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
     transition: 0.3s;
 }
+
 
 .why-card:hover {
     transform: translateY(-8px);
 }
 
+
 .why-icon {
     font-size: 40px;
+
     margin-bottom: 15px;
 }
 
+
 .why-card h3 {
     color: #082653;
+
     margin-bottom: 12px;
 }
 
+
 .why-card p {
     color: #666;
+
     line-height: 1.6;
 }
 
 .candidates-section {
     background-image: url("assets/electionbgimage.jpg");
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 
     padding: 60px 30px;
+
     width: 100%;
 }
+
 
 .candidates-section h2 {
     margin-bottom: 30px;
+
     color: black;
 }
 
+
 .candidates {
     display: grid;
+
     grid-template-columns: repeat(3, 300px);
+
     justify-content: center;
+
     gap: 30px;
+
     max-width: 1000px;
+
     margin: 0 auto;
 }
 
+
 .card {
     width: 100%;
+
     background-color: white;
+
     border-radius: 12px;
+
     overflow: hidden;
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
@@ -198,98 +306,135 @@ nav a:hover {
     transition: 0.3s;
 }
 
+
 .card:hover {
     transform: translateY(-8px);
 }
 
+
 .card img {
     width: 100%;
+
     height: 250px;
+
     display: block;
+
     background-color: #f5f5f5;
 }
+
 
 .card-content {
     padding: 25px;
 }
 
+
 .card-content h3 {
     font-size: 24px;
+
     color: #4d387a;
+
     margin-bottom: 8px;
 }
+
 
 .candidate-role {
     display: inline-block;
 
     background-color: #eee8ff;
+
     color: #4d387a;
 
     padding: 5px 12px;
+
     border-radius: 20px;
 
     font-size: 13px;
+
     margin-bottom: 15px;
 }
 
+
 .card-content p {
     color: #666;
+
     font-size: 15px;
+
     line-height: 1.5;
+
     margin-bottom: 10px;
 }
+
 
 .vote-button {
     display: inline-block;
 
     margin-top: 15px;
+
     padding: 10px 30px;
 
     background-color: #4d387a;
+
     color: white;
 
     border-radius: 6px;
 
     font-weight: bold;
+
     text-decoration: none;
 }
 
+
 .vote-button:hover {
     background-color: #30214f;
+
     color: white;
 }
 
 .election-section {
     background-image: url("assets/electionbgimage.jpg");
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 
     padding: 60px 30px;
+
     width: 100%;
 }
+
 
 .election-section h2 {
     margin-bottom: 40px;
 }
 
+
 .election-description {
     color: rgb(10, 10, 22);
+
     font-size: 20px;
+
     margin-bottom: 50px;
 }
 
+
 .election-info {
     max-width: 1100px;
+
     margin: auto;
 
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 20px;
 }
 
+
 .info-card {
     background-color: white;
+
     padding: 25px 15px;
 
     border-radius: 10px;
@@ -299,21 +444,29 @@ nav a:hover {
     transition: 0.3s;
 }
 
+
 .info-card:hover {
     transform: translateY(-5px);
 }
 
+
 .info-card h3 {
     color: #4d387a;
+
     font-size: 18px;
+
     margin-bottom: 15px;
 }
 
+
 .info-card p {
     color: #333;
+
     font-size: 20px;
+
     font-weight: bold;
 }
+
 
 .active-status {
     color: green !important;
@@ -321,30 +474,41 @@ nav a:hover {
 
 .booth-section {
     max-width: 1100px;
+
     margin: 60px auto 0;
 }
 
+
 .booth-section h2 {
     font-size: 32px;
+
     margin-bottom: 10px;
 }
 
-.booth-section>p {
+
+.booth-section > p {
     color: #070101;
+
     margin-bottom: 30px;
 }
 
+
 .booth-container {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 25px;
 }
 
+
 .booth-card {
     background-color: white;
+
     padding: 25px;
 
     border-radius: 10px;
+
     text-align: left;
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
@@ -354,27 +518,29 @@ nav a:hover {
     transition: 0.3s;
 }
 
+
 .booth-card:hover {
     transform: translateY(-5px);
 }
 
+
 .booth-card h3 {
     color: #4d387a;
+
     margin-bottom: 15px;
 }
 
+
 .booth-card p {
     color: #555;
+
     margin-bottom: 8px;
 }
-
-
-
-
 .important-info {
     max-width: 1100px;
 
     margin: 60px auto 0;
+
     padding: 30px;
 
     background-color: white;
@@ -386,40 +552,49 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
 }
 
+
 .important-info h2 {
     text-align: center;
+
     margin-bottom: 25px;
+
     color: #4d387a;
 }
+
 
 .important-info ul {
     padding-left: 25px;
 }
 
+
 .important-info li {
     margin-bottom: 12px;
+
     color: #555;
+
     line-height: 1.5;
 }
 
-
-
-
 .about-hero {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.65),
-            rgba(17, 19, 112, 0.65)),
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(17, 19, 112, 0.65)
+        ),
         url("assets/whychooseusimage.jpg");
 
     background-size: cover;
+
     background-position: center;
 
     height: 350px;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
+
     align-items: center;
 
     text-align: center;
@@ -427,52 +602,68 @@ nav a:hover {
     color: white;
 }
 
+
 .about-hero h1 {
     font-size: 50px;
+
     margin-bottom: 15px;
 }
+
 
 .about-hero p {
     font-size: 20px;
 }
 
-
 .about-section {
     max-width: 1100px;
 
     margin: auto;
+
     padding: 60px 30px;
 
     display: flex;
+
     align-items: center;
 
     gap: 50px;
 }
 
+
 .about-content {
     flex: 1;
+
     text-align: left;
 }
 
+
 .about-content h2 {
     font-size: 35px;
+
     color: #4d387a;
+
     margin-bottom: 20px;
 }
 
+
 .about-content p {
     color: #555;
+
     font-size: 17px;
+
     line-height: 1.7;
+
     margin-bottom: 15px;
 }
+
 
 .about-image {
     flex: 1;
 }
 
+
 .about-image img {
     width: 100%;
+
     height: 320px;
 
     object-fit: cover;
@@ -481,9 +672,6 @@ nav a:hover {
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
-
-
-
 .mission-section {
     background-color: #f2f6ff;
 
@@ -492,13 +680,17 @@ nav a:hover {
     text-align: center;
 }
 
+
 .mission-section h2 {
     font-size: 35px;
+
     color: #4d387a;
+
     margin-bottom: 15px;
 }
 
-.mission-section>p {
+
+.mission-section > p {
     max-width: 800px;
 
     margin: 0 auto 40px;
@@ -506,8 +698,10 @@ nav a:hover {
     color: #666;
 
     line-height: 1.7;
+
     font-size: 17px;
 }
+
 
 .mission-cards {
     max-width: 1100px;
@@ -521,6 +715,7 @@ nav a:hover {
     gap: 20px;
 }
 
+
 .about-card {
     background-color: rgb(200, 161, 161);
 
@@ -533,25 +728,30 @@ nav a:hover {
     transition: 0.3s;
 }
 
+
 .about-card:hover {
     transform: translateY(-8px);
 }
 
+
 .about-card h3 {
     color: #4d387a;
+
     margin-bottom: 15px;
 }
 
+
 .about-card p {
     color: #666;
+
     line-height: 1.6;
 }
-
-
 .how-section {
     background-image:
-        linear-gradient(rgba(23, 94, 201, 0.75),
-            rgba(23, 94, 201, 0.75)),
+        linear-gradient(
+            rgba(23, 94, 201, 0.75),
+            rgba(23, 94, 201, 0.75)
+        ),
         url("assets/electionbgimage.jpg");
 
     padding: 60px 30px;
@@ -559,11 +759,15 @@ nav a:hover {
     text-align: center;
 }
 
+
 .how-section h2 {
     font-size: 35px;
+
     color: white;
+
     margin-bottom: 40px;
 }
+
 
 .steps {
     max-width: 1100px;
@@ -577,17 +781,21 @@ nav a:hover {
     gap: 25px;
 }
 
+
 .step {
     padding: 25px;
 }
+
 
 .step span {
     display: inline-flex;
 
     width: 50px;
+
     height: 50px;
 
     align-items: center;
+
     justify-content: center;
 
     background-color: #4d387a;
@@ -597,22 +805,25 @@ nav a:hover {
     border-radius: 50%;
 
     font-size: 20px;
+
     font-weight: bold;
 
     margin-bottom: 15px;
 }
 
+
 .step h3 {
     color: #333;
+
     margin-bottom: 10px;
 }
 
+
 .step p {
     color: white;
+
     line-height: 1.5;
 }
-
-
 .voting-section {
     min-height: 100vh;
 
@@ -623,25 +834,34 @@ nav a:hover {
     background-image: url("assets/electionbgimage.jpg");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 }
 
+
 .voting-section h1 {
     color: #311278;
+
     font-size: 35px;
+
     margin-bottom: 10px;
 }
 
-.voting-section>p {
+
+.voting-section > p {
     color: #666;
+
     margin-bottom: 30px;
 }
+
 
 .voting-box {
     background: white;
 
     width: 650px;
+
     max-width: 95%;
 
     margin: 30px auto;
@@ -653,10 +873,13 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
 }
 
+
 .voting-box h2 {
     color: #123c78;
+
     margin-bottom: 25px;
 }
+
 
 .candidate {
     display: flex;
@@ -680,6 +903,7 @@ nav a:hover {
     background-color: white;
 }
 
+
 .candidate:hover {
     background-color: #eef4ff;
 
@@ -688,17 +912,21 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+
 .candidate input {
     margin-right: 15px;
 
     width: 18px;
+
     height: 18px;
 
     cursor: pointer;
 }
 
+
 .candidate-photo {
     width: 65px;
+
     height: 65px;
 
     border-radius: 50%;
@@ -710,9 +938,11 @@ nav a:hover {
     border: 2px solid #ddd;
 }
 
+
 .candidate-details {
     flex: 1;
 }
+
 
 .candidate-name {
     font-size: 18px;
@@ -724,13 +954,17 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
+
 .party {
     color: #777;
+
     font-size: 14px;
 }
 
+
 .party-logo {
     width: 55px;
+
     height: 55px;
 
     object-fit: contain;
@@ -740,6 +974,7 @@ nav a:hover {
 
 
 
+/* VOTE BUTTON */
 
 .vote-btn {
     width: 100%;
@@ -763,10 +998,10 @@ nav a:hover {
     margin-top: 10px;
 }
 
+
 .vote-btn:hover {
     background-color: #30214f;
 }
-
 footer {
     background-color: #222;
 
@@ -777,185 +1012,243 @@ footer {
     padding: 20px;
 }
 
+
 footer p {
     margin: 0;
 }
-
 
 @media (max-width: 992px) {
 
     nav {
         flex-wrap: wrap;
+
         gap: 15px;
     }
 
-    nav h2 {
+
+    .logo {
+        margin-right: auto;
+    }
+
+
+    .logo span {
         font-size: 22px;
     }
+
 
     .banner {
         height: 500px;
     }
 
+
     .banner-box {
         width: 75%;
     }
 
+
     .candidates {
         grid-template-columns: repeat(2, 300px);
+
         gap: 25px;
     }
 
+
     .card img {
         height: 250px;
+
         object-fit: contain;
     }
+
 
     .election-info {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
     .mission-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
 
     .steps {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
     .about-section {
         gap: 30px;
     }
-}
 
+}
 
 @media (max-width: 768px) {
 
     nav {
         flex-direction: column;
+
         gap: 12px;
     }
 
-    nav h2 {
+
+    .logo {
         margin-right: 0;
     }
+
+
+    .logo span {
+        font-size: 22px;
+    }
+
 
     .home-section {
         padding: 100px 20px 50px;
     }
 
+
     .home-section h1 {
         font-size: 35px;
     }
+
 
     .banner {
         height: 450px;
     }
 
+
     .banner-box {
         width: 90%;
+
         padding: 20px;
     }
+
 
     .banner-box h1 {
         font-size: 28px;
     }
 
+
     .why-cards {
         flex-direction: column;
+
         align-items: center;
     }
+
 
     .why-card {
         width: 90%;
     }
 
+
     .candidates {
         grid-template-columns: 1fr;
+
         max-width: 350px;
     }
+
 
     .card {
         width: 100%;
     }
 
+
     .card img {
         height: 250px;
+
         object-fit: contain;
     }
+
 
     .election-info {
         grid-template-columns: 1fr;
     }
 
+
     .booth-container {
         grid-template-columns: 1fr;
     }
 
+
     .about-section {
         flex-direction: column;
+
         padding: 50px 20px;
     }
+
 
     .about-content {
         text-align: center;
     }
 
+
     .about-image {
         width: 100%;
     }
+
 
     .mission-cards {
         grid-template-columns: 1fr;
     }
 
+
     .steps {
         grid-template-columns: 1fr;
     }
 
+
     .voting-box {
         width: 100%;
     }
-}
 
+}
 
 @media (max-width: 480px) {
 
-    nav h2 {
+    .logo span {
         font-size: 20px;
     }
+
 
     nav a {
         font-size: 13px;
     }
 
+
     .home-section h1 {
         font-size: 30px;
     }
+
 
     .banner {
         height: 400px;
     }
 
+
     .banner-box {
         width: 95%;
     }
+
 
     .banner-box h1 {
         font-size: 23px;
     }
 
+
     .card img {
         height: 220px;
     }
 
+
     .candidate-photo {
         width: 45px;
+
         height: 45px;
     }
 
+
     .party-logo {
         width: 40px;
+
         height: 40px;
     }
+
 }
